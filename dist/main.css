@@ -1,0 +1,180 @@
+/* 
+***** GLOBAL CSS STYLES
+*/
+
+/* Global variables */
+:root {
+  /* Colors */
+  --color-brand--01: #3d4852;
+  --color-brand--02: #f07e5e;
+  --color-brand--03: #28c278;
+  --color-brand--04: #4fc4e6;
+
+  /* Text */
+  --color-text-dark--01: #3d4852;
+  --color-text-dark--02: #6d7780;
+  --color-text-dark--03: #9AA0A5;
+
+  --color-text-light--01: #fff;
+  --color-text-heading: var(--color-brand--01);
+
+  /* UI colors */
+  --color-ui--01: #f0f2f3;
+  --color-ui--02: #CDD1D4;
+
+  /* Typography */
+  --font-family: 'Avenir','Helvetica Neue', sans-serif;
+
+  /* Grid */
+  --grid-width: 1180px;
+
+  /* Media queries breakpoints */
+  /* 
+  ***** tablet-portrait: 768px / 16px === 48em
+  ***** tablet-landscape: 1024px / 16px === 64em
+  */
+}
+
+/* Margin, Padding and Box-sizing resets. */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+/* General html styles */
+html {
+  /* Defines what 1rem is */
+  font-size: 62.5%;  /* 1rem = 10px; 10px/16px = 62.5% */
+}
+
+/* General body styles */
+body {
+  box-sizing: border-box;
+  font-family: var(--font-family);
+  color: var(--color-brand--01);
+  line-height: 1.67;
+  font-weight: normal;
+  /* Offset for fixed nav */
+  padding-top: 5rem;
+}
+
+/* Cursor selection styles */
+::selection {
+  background-color: var(--color-brand--03);
+  color: var(--color-text-light--01);
+}
+
+/* Heading styles */
+.h1 {
+  line-height: 1.11;
+  font-size: 3rem;
+  color: var(--color-brand--01);
+}
+
+@media only screen and (min-width: 48em) {
+  .h1 {
+    font-size: 4em;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  .h1 {
+    font-size: 5.4em;
+  }
+}
+
+.h2 {
+  font-size: 2.5rem;
+}
+
+@media only screen and (min-width: 64em) {
+  .h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+/* Paragraph styles */
+.paragraph {
+  font-size: 1.4rem;
+}
+
+@media only screen and (min-width: 64em) {
+  .paragraph {
+    font-size: 1.8rem;
+  }
+}
+
+.paragraph:not(:last-child) {
+  margin-bottom: 2rem;
+}
+
+@media only screen and (min-width: 64em) {
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}
+/* Image styles */
+img {
+  max-width: 100%;
+}
+
+/* Section styles */
+section {
+  padding: 2rem 0;
+}
+
+@media only screen and (min-width: 48em) {
+  section {
+    padding: 3rem 0;
+  }
+}
+
+@media only screen and (min-width: 64em) {
+  section {
+    padding: 4rem 0;
+  }
+}
+
+/* Grid styles */
+.row {
+  max-width: var(--grid-width);
+  padding: 0 2rem;
+  margin: 0 auto;
+}
+
+/* Utils */
+.margin-bottom-big {
+  margin-bottom: 4rem !important;
+}
+
+.margin-bottom-medium {
+  margin-bottom: 3rem !important;
+}
+
+.margin-bottom-small {
+  margin-bottom: 2rem !important;
+}
+
+.margin-bottom-tiny {
+  margin-bottom: 1rem !important;
+}
+
+.margin-top-big {
+  margin-top: 4rem !important;
+}
+
+.margin-top-medium {
+  margin-top: 3rem !important;
+}
+
+.margin-top-small {
+  margin-top: 2rem !important;
+}
+
+.margin-top-tiny {
+  margin-top: 1rem !important;
+}
