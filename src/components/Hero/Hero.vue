@@ -19,7 +19,6 @@ export default {};
 .hero {
   width: 100%;
   height: 30rem;
-  padding: 0 2rem;
   background-image: url("../../assets/img/hero.jpg");
   background-repeat: no-repeat;
   background-position: 55% center;
