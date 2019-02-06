@@ -70,7 +70,7 @@ export default {
 }
 
 .footer__nav-item {
-  margin: 0rem;
+  margin: 0;
 }
 
 @media only screen and (min-width: 48em) {
